@@ -2,8 +2,8 @@
   <img src="docs/media/longshot.svg" alt="" width="96" height="96">
   <h1>Longshot</h1>
   <p>Capture a scrolling page as one lossless PNG on Android 14 and later.</p>
-  <p><a href="#use-it">Get started</a> · <a href="docs/media/setup-guide.mp4">Watch the setup guide</a> · <a href="docs/media/scroll-capture.mp4">Play demo in 1080p60</a></p>
-  <a href="docs/media/scroll-capture.mp4"><img src="docs/media/scroll-capture.svg" width="960" alt="Longshot takes two scrolls to capture augie.gg through the footer, then opens the saved screenshot in Markup. Play the 12-second demo."></a>
+  <p><a href="#use-it">Get started</a> · <a href="https://augusdogus.github.io/longshot/media/setup-guide.mp4">Watch the setup guide</a> · <a href="https://augusdogus.github.io/longshot/media/scroll-capture.mp4">Play demo in 1080p60</a></p>
+  <a href="https://augusdogus.github.io/longshot/media/scroll-capture.mp4"><img src="docs/media/scroll-capture.svg" width="960" alt="Longshot takes two scrolls to capture augie.gg through the footer, then opens the saved screenshot in Markup. Play the 12-second demo."></a>
 </div>
 
 ## Use it
