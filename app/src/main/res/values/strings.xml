@@ -1,0 +1,35 @@
+<resources>
+    <string name="capture_page">Capture current page</string>
+    <string name="service_description">Longshot captures the app window you choose and swipes it when you tap More. It uses scroll events and the positions of visible items to measure how far the page moved. Captures stay on this device.</string>
+    <string name="app_name">Longshot</string>
+    <string name="capture_heading">Capture a page</string>
+    <string name="quick_access">Quick access</string>
+    <string name="quick_tap">Quick Tap</string>
+    <string name="quick_tap_steps">Turn on Quick Tap. Tap the gear beside Open app, then the gear beside Longshot. Select Capture current page.</string>
+    <string name="quick_tap_ready">Double-tap the back of your phone to capture the current page.</string>
+    <string name="quick_tap_opens_app">Quick Tap opens Longshot’s home screen. Choose Capture current page using the gear beside Longshot.</string>
+    <string name="quick_tap_unavailable">Open Settings → System → Gestures → Quick Tap to start actions. Choose Open app, tap its gear, then use Longshot’s gear to choose Capture current page.</string>
+    <string name="add_tile">Add Quick Settings tile</string>
+    <string name="save_location">Saves to Pictures/Longshot</string>
+    <string name="ready">Ready</string>
+    <string name="connecting">Connecting</string>
+    <string name="setup_needed">Setup needed</string>
+    <string name="capture_help">Open the controls on the page you want to save. Tap More to extend the image, or hold it to keep scrolling.</string>
+    <string name="connect_help">Accessibility is enabled. Capture controls will appear when Android connects Longshot.</string>
+    <string name="setup_heading">Set up Longshot</string>
+    <string name="setup_help">To capture and scroll a page, select Longshot under Downloaded apps in Accessibility, turn on Use Longshot, then tap Allow.</string>
+    <string name="setup_with_quick_tap">Select Longshot in Accessibility, turn on Use Longshot, then tap Allow. Return here to continue to Quick Tap settings.</string>
+    <string name="restricted_button">Seeing “Restricted setting”?</string>
+    <string name="restricted_title">Allow restricted settings</string>
+    <string name="restricted_help">If Android blocks Longshot, tap the disabled Longshot entry in Accessibility once. In App info, open the three-dot menu and choose Allow restricted settings. Confirm with your screen lock if asked. Return to Longshot to finish enabling the service.</string>
+    <string name="open_app_info">Open App info</string>
+    <string name="app_info_unavailable">Long-press the Longshot icon and tap App info to open its settings.</string>
+    <string name="accessibility_unavailable">Open Settings → Accessibility → Longshot. Turn on Use Longshot and tap Allow.</string>
+    <string name="open_controls">Show capture controls</string>
+    <string name="open_settings">Open accessibility settings</string>
+    <string name="screenshot_saved">Screenshot saved</string>
+    <string name="open_screenshot">Open saved screenshot</string>
+    <string name="edit_screenshot">Edit</string>
+    <string name="share_screenshot">Share</string>
+    <string name="dismiss_preview">Dismiss screenshot preview</string>
+</resources>

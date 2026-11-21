@@ -1,0 +1,7 @@
+.gradle/
+/build/
+/app/build/
+/local.properties
+/tmp/
+/Longshot.apk
+/augie-gg-full-page.png

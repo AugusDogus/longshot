@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:scrollbars="none">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+        android:paddingHorizontal="24dp" android:paddingTop="18dp" android:paddingBottom="18dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@mipmap/longshot"
+                android:importantForAccessibility="no"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:layout_marginStart="10dp" android:text="@string/app_name" android:textColor="@color/ink"
+                android:fontFamily="sans-serif-medium" android:textSize="24sp" android:letterSpacing="-0.04"/>
+            <TextView android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp" android:paddingVertical="6dp" android:textSize="13sp"
+                android:fontFamily="sans-serif-medium" android:accessibilityLiveRegion="polite"/>
+        </LinearLayout>
+
+        <ImageView android:id="@+id/illustration" android:layout_width="match_parent" android:layout_height="228dp"
+            android:layout_marginTop="30dp" android:background="@drawable/art_field" android:src="@drawable/capture_illustration"
+            android:scaleType="fitCenter" android:importantForAccessibility="no"/>
+
+        <TextView android:id="@+id/heading" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:text="@string/capture_heading" android:textColor="@color/ink"
+            android:textSize="35sp" android:letterSpacing="-0.045" android:fontFamily="sans-serif-medium"
+            android:accessibilityHeading="true"/>
+        <TextView android:id="@+id/instructions" style="@style/Detail" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+
+        <Button android:id="@+id/start" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="56dp" android:layout_marginTop="20dp" android:paddingVertical="12dp" android:paddingHorizontal="20dp"
+            android:background="@drawable/primary_button" android:stateListAnimator="@null"
+            android:fontFamily="sans-serif-medium" android:textSize="16sp" android:letterSpacing="0"
+            android:textColor="@color/on_action" android:textAllCaps="false"/>
+
+        <Button android:id="@+id/restriction_help" android:layout_width="match_parent" android:layout_height="wrap_content"
+            style="@android:style/Widget.Material.Button.Borderless" android:minHeight="48dp"
+            android:text="@string/restricted_button" android:textAllCaps="false" android:textColor="@color/action"
+            android:visibility="gone"/>
+
+        <Space android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="0.4"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/quick_access"
+            android:accessibilityHeading="true" android:textColor="@color/ink" android:textSize="19sp"
+            android:fontFamily="sans-serif-medium" android:letterSpacing="-0.025"/>
+        <LinearLayout android:id="@+id/access_panel" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:background="@drawable/quick_access_bg" android:orientation="vertical">
+            <LinearLayout android:id="@+id/quick_tap_row" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:clickable="true" android:focusable="true" android:foreground="?android:attr/selectableItemBackground"
+                android:padding="16dp" android:gravity="center_vertical">
+                <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_tap"
+                    android:tint="@color/action" android:importantForAccessibility="no"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:orientation="vertical" android:layout_marginStart="14dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quick_tap"
+                        android:textColor="@color/ink" android:fontFamily="sans-serif-medium" android:textSize="16sp"/>
+                    <TextView android:id="@+id/quick_tap_detail" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="@string/quick_tap_steps" android:textSize="14sp" android:textColor="@color/muted"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+                <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_chevron" android:tint="@color/muted" android:importantForAccessibility="no"/>
+            </LinearLayout>
+            <View android:id="@+id/quick_tap_divider" android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/hairline"
+                android:layout_marginStart="52dp" android:layout_marginEnd="16dp"/>
+            <LinearLayout android:id="@+id/add_tile" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:minHeight="58dp" android:paddingHorizontal="16dp" android:paddingVertical="10dp"
+                android:foreground="?android:attr/selectableItemBackground" android:gravity="center_vertical"
+                android:clickable="true" android:focusable="true" android:contentDescription="@string/add_tile">
+                <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_tile"
+                    android:tint="@color/action" android:importantForAccessibility="no"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:layout_marginStart="14dp" android:text="@string/add_tile" android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium" android:textColor="@color/ink" android:importantForAccessibility="no"/>
+                <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_plus"
+                    android:tint="@color/muted" android:importantForAccessibility="no"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="0.6"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center"
+            android:layout_marginTop="20dp">
+            <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/ic_folder"
+                android:tint="@color/muted" android:importantForAccessibility="no"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="7dp"
+                android:text="@string/save_location" android:textSize="13sp" android:textColor="@color/muted"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

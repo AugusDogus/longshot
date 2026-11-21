@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@mipmap/longshot" android:roundIcon="@mipmap/longshot" android:theme="@style/LongshotTheme" android:allowBackup="false">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".CaptureShortcutActivity" android:exported="false"
+            android:taskAffinity="dev.longshot.pixel.shortcut" android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.NoDisplay"/>
+        <service android:name=".CaptureService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:exported="true">
+            <intent-filter><action android:name="android.accessibilityservice.AccessibilityService"/></intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/capture"/>
+        </service>
+        <service android:name=".CaptureTile" android:label="Longshot" android:icon="@drawable/ic_capture" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:exported="true">
+            <intent-filter><action android:name="android.service.quicksettings.action.QS_TILE"/></intent-filter>
+        </service>
+    </application>
+</manifest>
